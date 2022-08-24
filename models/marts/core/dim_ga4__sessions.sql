@@ -4,6 +4,8 @@ with session_start_dims as (
     select 
         session_key,
         ga_session_number,
+        stream_id,
+        platform,
         page_location as landing_page,
         page_hostname as landing_page_hostname,
         geo_continent,
